@@ -1,0 +1,87 @@
+/*Suche */
+.home-header-search {
+	/*position: absolute;*/
+	/*left:27.5vw;*/
+	text-align: center;
+	/*top: 55px;*/
+	/*padding-top: 65px;*/
+	margin-top: 15px;
+}
+
+.home-header-search-categories {
+	background: #eee; 
+	outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 120px;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.select:after{
+	position: relative;
+	color: #;
+	top: 3px;
+  right: 1.25rem;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -.15rem;
+  pointer-events: none;
+  border-top: .3rem solid;
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid transparent;
+  border-left: .3rem solid transparent;
+}
+.home-header-search-categories, .home-header-search-field, .home-header-search-btn {
+	border: 1px solid #dfe1e5;
+	box-sizing: border-box;
+	height: 40px;
+	outline: none;
+}
+
+.home-header-search-categories::focus {
+	outline: none;
+}
+
+.home-header-search-categories {
+	border-right: none;
+	border-radius: 175px 0px 0px 175px;
+	font-family: 'Istok Web';
+	font-size: 0.9em;
+	padding-left: 10px;
+	padding-right: 10px;
+	outline: none;
+	color: #555;
+}
+
+.home-header-search-field {
+	border-left: none;
+	border-radius: 0 175px 175px 0;
+	width: 35vw;
+	font-size: 0.9em;
+	font-family: 'Istok Web';
+	position: relative;
+	left: -20px;
+	padding-left: 10px;
+}
+
+.home-header-search-field:focus {
+	padding-left: 10px;
+}
+
+.search-field-span::after{
+	font-family: "Font Awesome 5 Free"; 
+	color: #c1a8da;
+	cursor: pointer;
+	font-weight: 900; 
+	content: "\f002";
+	position: relative;
+	left: -60px;
+	top: 2px;
+}

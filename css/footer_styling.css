@@ -1,0 +1,129 @@
+/*Footer*/
+
+.footer {
+	/*background: #e6deff;
+	background: #e1b1ff;*/
+	background: #ececec;
+	position: relative;
+	top: 50px;
+	/*width: 69.15%;
+	margin-left: 16.9%;*/
+	border-radius: 3px;
+	/*box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
+}
+
+.footer-senden-div{
+	margin-top: 10px;
+}
+
+.footer-feedback{
+	margin: auto;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-feedback-textarea {
+	background: white;
+	border-radius: 3px;
+	color: #7c52ae;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 0.8rem;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-style: none solid solid none;
+	border-width: medium 1px 1px medium;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+	transition: background-color 0.2s ease 0s;
+	line-height: 2;
+}
+
+.footer-feedback-textarea:focus{
+	background: white;
+}
+
+.footer-senden-btn {
+	font-size: 0.8rem;
+	color: #555;
+	display: inline-block;
+}
+
+.footer-impressum-datenschutz {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #555;
+}
+
+.footer-links{
+	text-decoration: none;
+	color: #7c52ae;
+}
+
+.footer-links:hover{
+	text-decoration: underline;
+}
+
+
+.footer_menu {
+	position: relative;
+	left: 14.5%;
+	padding-bottom: 50px;
+}
+.footer_menu div{
+	display: inline-block;
+	font-family: 'Istok Web', sans-serif;
+	margin-right: 90px;
+}
+
+.footer_div_title{
+	color: #507;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#meine_aktionen_list, #inhalte_list, #landeskirchenamt_list, #wissen_list {
+	padding: 0px;
+}
+
+#meine_aktionen_div{
+	position: relative;
+	top: -25px;
+}
+
+#inhalte_div{
+	position: relative;
+	top: -25px;
+}
+
+#landeskirchenamt_div{
+	position: relative;
+	top: 5px;
+}
+
+#wissen_div {
+	position: relative;
+	top: 35px;
+}
+
+#meine_aktionen_list li, #inhalte_list li, #landeskirchenamt_list li, #wissen_list li {
+	list-style: none;
+	line-height: 30px;
+
+}
+
+#meine_aktionen_list > li > a, #inhalte_list li a, #landeskirchenamt_list li a, #wissen_list li a {
+	text-decration: none;
+}
+
+.footer_list_item a{
+	text-decoration: none;
+	color: #7c52ae;
+	color: #507;
+	font-size: 14px;
+}
+
+.footer_list_item a:hover{
+	text-decoration: underline;
+}

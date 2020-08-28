@@ -1,0 +1,240 @@
+/*Home Tabs*/
+
+.home-tabs {
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	border-radius: 4px;
+	position: relative;
+	/*left: 17.3vw;*/
+	/*margin-left: 16.9%;
+	width: 69.15%;*/
+	top:25px;
+	/*margin-top: 110px;*/
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.home-my-tabs-list {
+	border-bottom: 1.5px solid lightgrey;
+	padding-bottom: 8px;
+}
+
+.home-my-tabs-list li {
+	display: inline-block;
+	font-family: 'Istok Web', sans-serif;
+	/*font-size: 15.5px;*/
+	font-size: 0.9rem;
+}
+
+.tabcontent {
+	font-family: "Istok Web", sans-serif;
+	font-size: 0.9rem;
+	color: #ff6600;
+}
+
+.ui-tabs-tab > a {
+	text-decoration: none;
+	color: #555;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	line-height: 20px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-right: 2px;
+	border-radius: 4px 4px 0 0;
+}
+
+.ui-tabs-tab > a:hover{
+	cursor: pointer;
+	color: #08c;
+}
+
+.ui-tabs-tab.ui-tabs-active > a{
+	border: 1.5px solid lightgrey;
+	border-bottom: 1.8px solid white;
+	border-radius: 4px 4px 0 0;
+	color: #08c;
+	font-weight: 500;
+}
+
+/*Beim Aufruf der Homepage ausblenden*/
+.tabcontent.start_invisible {
+	display: none;
+}
+
+#ticker-karte {
+	height: 400px;
+}
+#neue-beitraege-kommentare-newsletter{
+	overflow: scroll;
+	height: 350px;
+	padding-left: 20px;
+}
+
+#ticker-karte, #kommentare-newsletter{
+	column-count: 2;
+}
+
+#neue-beitraege, #kommentare{
+	margin-left: 20px;
+}
+
+#neue-beitraege p {
+	padding-left: 5px;
+}
+
+#neue-beitraege-image{
+	width: 110%;
+}
+
+#neue-beitraege-var2-image {
+	width: 100%;
+}
+
+
+#elkb-karte-image{
+	padding-left: 100px;
+	padding-top: 7px;
+	width: 65%;
+}
+
+#kommentare-newsletter {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#kommentare-image{
+	width: 110%;
+}
+
+#kommentare-var2-image{
+	width: 100%;
+}
+
+.kommentare-newsletter-p:hover{
+	cursor: pointer;
+}
+
+.kommentare-newsletter-p i{
+	transition: all 0.5s ease;
+}
+
+.kommentare-newsletter-arrow-visible{
+	-moz-transform:rotate(-90deg);
+  -webkit-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+}
+
+#newsletter{
+	padding-left: 100px;
+	padding-top: 0.5px;
+}
+
+#newsletter-image{
+	width: 160%;
+}
+
+#newsletter-var2-image{
+	width: 100%;
+}
+
+#neu-im-intranet{
+	column-count: 2;
+}
+
+#neu-im-intranet p {
+	margin-left: 20px;
+}
+
+#neu-im-intranet-1-image {
+	width: 90%;
+}
+
+#neu-im-intranet-2-image{
+	width: 90%;
+	padding-left: 20px;
+	padding-top: 55px;
+}
+
+#neu-im-intranet-mehr{
+	text-align: center;
+	font-size: 14px;
+}
+
+#neu-im-intranet-mehr a{
+	color:#7c52ae;
+	opacity: 0.7;
+	text-decoration: none;
+	padding: 7px;
+	border-radius: 5px;
+	border: 2px solid white;
+	border-bottom: 2px solid #7c52ae;
+	transition: opacity 0.5s;
+	transition: border 0.5s;
+}
+
+#neu-im-intranet-mehr a:hover{
+	opacity: 1;
+	border: 2px solid #7c52ae;
+}
+/*#intranet{
+	display: flex;
+}
+
+#intranet-tab-hauptmenu{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 63%;
+}
+
+#intranet-tab-karte{
+	flex-basis: 37%;
+}*/
+
+/*#elkb-karte{
+	width: 100%;
+	height: auto;
+}*/
+
+#lka-intern-image {
+	display: none;
+}
+
+#portale, #orgas{
+	margin-left: 20px;
+}
+
+#orgas{
+	padding-top: 1px;
+}
+#portale-image{
+	width: 100%;
+}
+
+#orgas-image{
+	width: 120%;
+}
+
+#orgas_portale{
+	column-count: 2;
+	column-gap: 30px;
+}
+
+#intranet-image {
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#kiv-image{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#newTab {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 0.9rem;
+	padding-left: 30px;
+	padding-top: 3px;
+	color: #555;
+}

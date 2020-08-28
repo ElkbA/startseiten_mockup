@@ -1,0 +1,281 @@
+/*.home-header-search-btn {
+	background: #fff;
+	background: #00b4cc none repeat scroll 0% 0%;
+	box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+	color: #c1a8da;
+	cursor: pointer;
+	border-radius: 0px 175px 175px 0px;
+	border-left: none;
+	font-size: 1.0em;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	left: -25px;
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+	/*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+	top: 0.05vh;
+    transition: all 0.2s linear 0s;
+}*/
+
+/*.home-header-search-btn:hover{
+	background: #00a2b7;
+	border-color: #00a2b7;
+}*/
+
+/*.home-header-search-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background:-moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+  background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  background:linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  padding: x 12px;
+  top: 0;
+  left: 15%;
+  height: 1px;
+  width: 40%;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out 0s;
+}
+.home-header-search-btn:active::before {
+  opacity: 0;
+}
+.home-header-search-btn:hover::before {
+  left: 45%;
+}
+*/
+
+/*.elkb-tools-icon{
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px -2px #333;
+  text-shadow: 0px -1px #333;
+  position: relative;
+  display: inline-block;
+  padding: 8px 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 25px;
+  opacity: 0.5;
+}
+
+
+
+#elkbCloudIcon{
+  background-color: #00aadd;
+  background-image: linear-gradient(#00aadd, #7fd4ee);
+  padding: 7px 8px;
+}
+
+#elkbCloudIcon::after{
+  content: '  CLOUD';
+  color: #fff;
+  text-shadow: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#elkbCloudIcon:hover{
+  opacity: 1;
+  color: #00aadd;
+}
+
+#elkbChatIcon{
+  background-color: #f00;
+  background-image: linear-gradient(#f00, #ff7f7f);
+  padding: 7px 8px;
+}
+
+#elkbChatIcon:after{
+  content: '  Chat';
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#elkbChatIcon:hover{
+  color: #f00;
+  opacity: 1;
+}
+
+#elkbMailIcon{
+  background-color: #073;
+  background-image: linear-gradient(#073,#0fa);
+  padding: 7px 8px;
+}
+
+#elkbMailIcon:after{
+  content: '  Mail';
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#elkbMailIcon:hover{
+  color: #073;
+  opacity: 1;
+}
+
+#elkbLernenIcon {
+  background-color: orange; 
+  background-image: linear-gradient(#b40, orange);
+  padding: 7px 8px;
+}
+
+#elkbLernenIcon:after{
+  content: '  Lernen';
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#elkbLernenIcon:hover {
+  color: orange;
+}
+
+#elkbTalkIcon {
+  background-color: #fa2147;
+  background-image: linear-gradient(#fa2147, #fd9eae);
+  padding: 7px 8px;
+}
+
+#elkbTalkIcon:after{
+  content: '  Talk';
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#elkbTalkIcon:hover{
+  color: #fa2147;
+}
+
+#elkbUmfragenIcon{
+  background-color: green;
+  background-image: linear-gradient(green, lightgreen);
+  padding: 7px 8px;
+}
+
+#elkbUmfragenIcon:after{
+  content: '  Umfragen';
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#elkbUmfragenIcon:hover{
+  color: #69e5ae;
+}
+
+#elkbFormulareIcon {
+  background-color: #507;
+  background-image: linear-gradient(#507, #eaf);
+  padding: 7px 8px;
+}
+
+#elkbFormulareIcon:after{
+  content: '  Formulare';
+  color: #fff;
+  text-shadow: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#elkbFormulareIcon:hover{
+  color: #507;
+}
+
+#elkbDeckIcon {
+  background-color: #00b4cc;
+  background-image: linear-gradient(#00a2b7, #00b4cc);
+  padding: 7px 8px;
+}
+
+#elkbDeckIcon:after{
+  content: '  Deck';
+  color: #fff;
+  text-shadow: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#elkbDeckIcon:hover{
+  color: #00b4cc;
+}*/
+
+/*<ul class="eklb-tools-list">
+        
+        <li><a href="https://cloud.elkb.de/files" class="elkb-tools-icon" id="elkbCloudIcon" target="_blank" title="elkbCloud"><i class="fas fa-cloud"></i></a></li>
+        <li><a href="https://chat.elkb.org/channel/elkbIntranet" class="elkb-tools-icon" id="elkbChatIcon" target="_blank" title="elkbChat"><i class="fas fa-comments"></i></a></li>
+        <li><a href="https://owa.elkb.de/" class="elkb-tools-icon" id="elkbMailIcon" target="_blank" title="elkbMail"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://schulung.elkb.org/kurse/login" class="elkb-tools-icon" id="elkbLernenIcon" target="_blank" title="elkbLernen"><i class="fas fa-graduation-cap"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/spreed/" class="elkb-tools-icon" id="elkbTalkIcon" target="_blank" title="elkbTalk"><i class="fas fa-address-card"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/polls/" class="elkb-tools-icon" id="elkbUmfragenIcon" target="_blank" title="elkbUmfragen"><i class="fas fa-poll"></i></a></li>
+        <li><a href="https://www.elkb.org/intranet/formularcenter" class="elkb-tools-icon" id="elkbFormulareIcon" target="_blank" title="elkbFormulare"><i class="fab fa-wpforms"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/deck/" class="elkb-tools-icon" id="elkbDeckIcon" target="_blank" title="elkbDeck"><i class="fas fa-check-square"></i></a></li>
+        
+
+        <li><a href="https://cloud.elkb.de/files" class="cool-link" id="elkbCloudLink" target="_blank" title="elkbCloud"><i class="fas fa-cloud"></i></a></li>
+        <li><a href="https://chat.elkb.org/channel/elkbIntranet" class="cool-link" id="elkbChatLink" target="_blank" title="elkbChat"><i class="fas fa-comments"></i></a></li>
+        <li><a href="https://owa.elkb.de/" class="cool-link" id="elkbMailLink" target="_blank" title="elkbMail"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://schulung.elkb.org/kurse/login" class="cool-link" id="elkbLernenLink" target="_blank" title="elkbLernen"><i class="fas fa-graduation-cap"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/spreed/" class="cool-link" id="elkbTalkLink" target="_blank" title="elkbTalk"><i class="fas fa-address-card"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/polls/" class="cool-link" id="elkbUmfragenLink" target="_blank" title="elkbUmfragen"><i class="fas fa-poll"></i></a></li>
+        <li><a href="https://cloud.elkb.de/files/apps/deck/" class="cool-link" id="elkbDeckLink" target="_blank" title="elkbDeck"><i class="fas fa-tasks"></i></a></li>
+
+        <li><button class="glossy-btn bookmark-btn" title="Intranet-Lesezeichen"><i class="fas fa-book-open"></i></button></li>
+        <li><button class="glossy-btn elkbApps" title="Meine Intranet-Anwendungen"><i class="fas fa-th"></i></button></li>
+        <li><button class="glossy-btn myaccount-btn" title="Mein Konto"><i class="fas fa-user"></i></button></li>
+        <li><button class="glossy-btn signout-btn" title="Abmelden"><i class="fas fa-sign-out-alt"></i></button></li>
+      </ul>
+*/
+
+/*.new-image-btn {
+  font-size: 2.0rem;
+  outline: 0;
+  border: 1px solid black;
+}
+
+.new-image-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.618rem 1.618rem;
+  cursor: pointer;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  background: #00b4cc none repeat scroll 0% 0%;
+  border: 1px solid #242424;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+
+  transition: all 0.2s linear 0s;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 0.618rem;
+
+}*/

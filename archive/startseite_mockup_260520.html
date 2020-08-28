@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elkbIntranet - Startseite - Prototyp</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web|Rubik|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dd1af5a16d.js" crossorigin="anonymous"></script>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="startseite_script.js"></script>	
+</head>
+
+
+<body class="body">
+	<header class="header">
+		<div class="home-header-logo">
+			<img src="images/logo.png" alt="Startseiten-Logo" id="logo-startseite">
+		</div>
+
+		<div class="home-header-tools-extern">
+			<nav class="extern-tools-nav">
+				<a href="https://cloud.elkb.de/files" class="cool-link" id="elkbCloudLink" target="_blank" title="elkbCloud"><i class="fas fa-cloud"></i></a>
+				<a href="https://chat.elkb.org/channel/elkbIntranet" class="cool-link" id="elkbChatLink" target="_blank" title="elkbChat"><i class="fas fa-comments"></i>
+				<a href="https://owa.elkb.de/" class="cool-link" id="elkbMailLink" target="_blank" title="elkbMail"><i class="fas fa-envelope"></i></a>
+				<a href="https://schulung.elkb.org/kurse/login" class="cool-link" id="elkbLernenLink" target="_blank" title="elkbLernen"><i class="fas fa-graduation-cap"></i></a>
+				<a href="https://cloud.elkb.de/files/apps/spreed/" class="cool-link" id="elkbTalkLink" target="_blank" title="elkbTalk"><i class="fas fa-address-card"></i></a>
+				<a href="https://cloud.elkb.de/files/apps/polls/" class="cool-link" id="elkbUmfragenLink" target="_blank" title="elkbUmfragen"><i class="fas fa-poll"></i></a>
+				<a href="https://cloud.elkb.de/files/apps/deck/" class="cool-link" id="elkbDeckLink" target="_blank" title="elkbDeck"><i class="fas fa-tasks"></i></a>
+			</nav>
+		</div>
+
+		<div class ="home-header-tools-intern">
+			<nav class="intern_tools_nav">
+				<button class="glossy-btn bookmark-btn" title="Intranet-Lesezeichen" onclick="show_hide_bookmarks();"><i class="fas fa-book-open"></i></button>
+				<button class="glossy-btn elkbApps" title="Meine Intranet-Anwendungen" onclick="show_hide_appsLauncher();"><i class="fas fa-th"></i></button>
+				<a href="https://www2.elkb.de/intranet/user" target="_blank"><button class="glossy-btn myaccount-btn" title="Mein Konto"><i class="fas fa-user"></i></button></a>
+				<a href="https://www2.elkb.de/intranet/cas/logout" target="_blank"><button class="glossy-btn signout-btn" title="Abmelden"><i class="fas fa-sign-out-alt"></i></button></a>
+			</nav>
+			<div class="home-header-bookmarks bookmarks-unvis">
+				<span id="home-header-bookmarks-headline">Meine Intranet-Lesezeichen</span>
+				<ul class="home-header-bookmarks-list">
+					<li class="home-header-bookmarks-item"><a href="https://www2.elkb.de/intranet/node/23873" target="_blank"><i class="fas fa-angle-right"></i> Sanierung der Bestandgebäude</a></li>
+					<li class="home-header-bookmarks-item"><a href="https://www2.elkb.de/intranet/node/25781" target="_blank"><i class="fas fa-angle-right"></i> Maßnahmen zum Schutz vor Corona-Virus</a></li>
+					<li class="home-header-bookmarks-item"><a href="https://www2.elkb.de/intranet/node/12212" target="_blank"><i class="fas fa-angle-right"></i> Wohnungsangebote</a></li>
+					<li class="home-header-bookmarks-item"><a href="https://www2.elkb.de/intranet/lesegottesdienste" target="_blank"><i class="fas fa-angle-right"></i> Lesegottesdienste</a></li>
+				</ul>
+			</div>
+
+			<div class="home-header-appsLauncher home-header-appsLauncher-unvis">
+				<div class="home-header-appsLauncher-item" id="appFormularcenter">
+					<a href="https://www.elkb.org/intranet/formularcenter" target="_blank" title="Formularcenter"><div class="appLauncher-icon"><i class="fas fa-jedi"></i></div><span>Formulare</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appZeus">
+					<a href="http://isgus-ze/Webservices" target="_blank" title="ZEUS Workflow"><div class="appLauncher-icon"><i class="fas fa-clock"></i></div><span>ZEUS Workflow</span></a>
+				</div>				
+				<div class="home-header-appsLauncher-item" id="appFahrkartenbestellung">
+					<a href="https://www.elkb.org/intranet/formular/1175" target="_blank" title="Fahrkartenbestellung"><div class="appLauncher-icon"><i class="fas fa-subway"></i></div><span>Fahrkarten</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appNoruf">
+					<a href="https://www2.elkb.de/intranet/node/3161" target="_blank" title="Notruf/Ersthelfer"><div class="appLauncher-icon"><i class="fas fa-ambulance"></i></div><span>Notruf</span></a>
+				</div>
+				
+				<div class="home-header-appsLauncher-item" id="appHausmitteilungen">
+					<a href="https://www2.elkb.de/intranet/node/2612" target="_blank" title="Hausmitteilungen"><div class="appLauncher-icon"><i class="far fa-newspaper"></i></div><span>Hausmitteilungen</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appSitzungsdienst">
+					<a href="https://www.elkb.org/intranet/formular/198" target="_blank" title="Sitzungsdienst"><div class="appLauncher-icon"><i class="fas fa-users"></i></div><span>Sitzungsdienst</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appProzesse">
+					<a href="https://www2.elkb.de/intranet/node/21010" target="_blank" title="Prozesse"><div class="appLauncher-icon"><i class="fas fa-project-diagram"></i></div><span>Prozesse</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appTelefonbuch">
+					<a href="https://www2.elkb.de/intranet/node/2666" target="_blank" title="Telefonbuch"><div class="appLauncher-icon"><i class="fas fa-phone-alt"></i></div><span>Telefonbuch</span></a>
+				</div>
+				
+				<div class="home-header-appsLauncher-item" id="appSpeiseplan">
+					<a href="https://www2.elkb.de/intranet/node/3199" target="_blank" title="Speiseplan Cafeteria"><div class="appLauncher-icon"><i class="fas fa-utensils"></i></div><span>Speisepläne</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appAuftragsmanagement">
+					<a href="https://www2.elkb.de/intranet/node/12863" target="_blank" title="Auftragsmanagement"><div class="appLauncher-icon"><i class="fas fa-people-carry"></i></div><span>Aufträge</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appFeuer">
+					<a href="https://www2.elkb.de/intranet/node/3268" target="_blank" title="Feuer"><div class="appLauncher-icon"><i class="fas fa-fire-extinguisher"></i></div><span>Feuer</span></a>
+				</div>
+				<div class="home-header-appsLauncher-item" id="appHilfe">
+					<a href="https://www2.elkb.de/intranet/node/3268" target="_blank" title="schnelle Hilfe"><div class="appLauncher-icon"><i class="fas fa-info-circle"></i></div><span>schnelle Hilfe</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="home-header-search">
+			<span class="select">
+				<select class="home-header-search-categories">
+					<option selected="selected" value="search-alias=xyz" style="margin-right: 30px;">Bitte wählen</option>
+					<option>Schlagwort</option>
+					<option>Personen</option>
+					<option>Pfarramt</option>
+				</select>
+			</span>
+			<span class="search-field-span">
+				<input type="text" class="home-header-search-field" placeholder="Wonach suchen Sie?">
+			</span>
+			<!--<button type="submit" class="home-header-search-btn"><i class="fas fa-search"></i></button>-->
+		</div>
+	</header>
+			
+	<div class="home-headlines">
+		<span onclick="headlines_vis();" class="elkb-schlagzeilen-ueberschrift">ELKB-Schlagzeilen <i class="fas fa-caret-down" id="headlines-caret"></i> </span>
+		<ul class="home-headlines-list" id="home-headlines-list-id">			
+			<li class="headline-card card-visible">
+				<a href="https://www2.elkb.de/intranet/node/23633" title="Osterbotschaft vom Landesbischof Bedford-Strohm" target="_blank">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/bedford_strohm.jpeg">
+						</div>
+						<div class="card-text">
+							<p>
+								Osterbotschaft von Heinrich Bedford-Strohm
+								<br>
+								<span class="card-text-datum">10.Apr</span>
+							</p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="headline-card card-visible">
+				<a href="https://www2.elkb.de/intranet/node/25499" title="Leben im Sterben" target="_blank">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/Landkirche.JPG">
+						</div>
+						<div class="card-text">
+							<p>
+								Ökumenische Woche: "Leben im Sterben"
+								<br>
+								<span class="card-text-datum">23.Feb</span>
+							</p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="headline-card card-visible">
+				<a href="https://www.evangelisch.de/inhalte/165842/19-02-2020/das-evangelische-content-netzwerk-yeet-ist-gestartet" title="Evangelisches Netzwerk yeet ist gestartet" target="_blank">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/yeet_test.jpg">
+						</div>
+						<div class="card-text">
+							<p>
+								Evangelisches Netzwerk yeet gestartet
+								<br>
+								<span class="card-text-datum">18.Feb</span>
+							</p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="headline-card card-visible">
+				<a href="http://evangelische-journalistenschule-retten.de/" title="Evangelische Journalistenschule retten" target="_blank">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/ejs.jpg">
+						</div>
+						<div class="card-text">
+							<p>
+								Evangelische Journalistenschule retten
+								<br>
+								<span class="card-text-datum">15.Jan</span>
+							</p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="headline-card card-invisible">
+				<a href="https://www2.elkb.de/intranet/node/25484" title="Verfassungsmedaille in Gold für Breit-Keßler" target="_blank">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/breit_kessler.jpg">
+						</div>
+						<div class="card-text">
+							<p>
+								Verfassungsmedaille in Gold für Breit-Keßler
+								<br>
+								<span class="card-text-datum">12.Dez</span>
+							</p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+		<div class="angles">
+			<i class="fas fa-chevron-left both-angles" id="angle-left" onclick="scroll_headlines_left();"></i>
+			<i class="fas fa-chevron-right both-angles" id="angle-right" onclick="scroll_headlines_right();"></i>
+		</div>
+	</div>
+
+	<div class="home-tabs">
+		<div class="home-my-tabs">
+			<!-- Liste der Tabs* -->
+			<ul class="home-my-tabs-list">
+				<li><a href="#intranet" class="tablinks active" onclick="showTab(event, 'intranet')">Intranet</a></li>
+				<li><a href="#lkaIntern" class="tablinks" onclick="showTab(event, 'lkaIntern')">LKA-Intern</a></li>
+				<li><a href="#kiv" class="tablinks" onclick="showTab(event, 'kiv')">KIV</a></li>
+				<li><a href="#newTab" class="tablinks" onclick="showTab(event, 'newTab')">noch ein Tab</a></li>
+			</ul>		
+
+			<!-- Tab content -->
+			<div id="intranet" class="tabcontent start_visible">
+				<p><img src="images/d8_startbild.png" id="intranet-image"></p>
+			</div>
+
+			<div id="lkaIntern" class="tabcontent start_invisible">
+				<p><img src="images/lka-intern.png" id="lka-intern-image>"></p>
+			</div>
+
+			<div id="kiv" class="tabcontent start_invisible">
+				<p><img src="images/kiv.png" id="kiv-image"></p>
+			</div>
+
+			<div id="newTab" class="tabcontent start_invisible">
+				<p>Hier kann ein weitere Intranet-Seite erscheinen. Welche das ist, wird von jedem Intranet-Nutzer selbst festgelegt. Beispiele sind:</p>
+				<ul>
+					<li>ein weiteres Privatportal, z.B. Abteilung F</li>
+					<li>die Liste der Dekanatsbüros</li>
+					<li>die ELKB-Stellenbörse</li>
+					<li>Intranet-Seite eines Dekanats, wo sich der jeweilige Intranet-Nutzer ehrenamtlich engagiert</li>
+					<li>und und und...</li>
+				</ul>
+			</div>
+		</div>		
+
+	</div>
+	<footer class="footer">
+		<div class="footer_menu">
+			<div id="meine_aktionen_div"><span class="footer_div_title">Meine Aktionen</span>
+				<ul id="meine_aktionen_list">
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/add/anleitung">Anleitung erstellen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/add/article">Artikel schreiben</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/add/faq">FAQ erstellen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/add/infoportal">Infoportal erstellen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/add/lila-brett-anzeige">Lila-Brett-Anzeige erstellen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/apps/email/new">ELKB E-Mailkonto beantragen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/bestellportal-register">EDV-Bestellportal -(Registrierung)</a></li>
+				</ul>
+			</div>
+
+			<div id="inhalte_div"><span class="footer_div_title">Inhalte</span>
+				<ul id="inhalte_list">
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/aktuelles">Aktuelles</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/aggregator/sources">In der Presse</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/neue-portalinhalte">Neue Portalinhalte</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/anwendungsgruppen">Anwendungsgruppen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/amtsblatt">Amtsblatt</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/puk">PuK</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/lila-brett">Lila Brett</a></li>
+				</ul>
+			</div>
+
+			<div id="landeskirchenamt_div"><span class="footer_div_title">Landeskirchenamt</span>
+				<ul id="landeskirchenamt_list">
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/lka">LKA Startseite</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/245">LKA Allg. Informationen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/236">LKA Abteilung A - Leitung, Recht, Zentrale Dienste</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/1666">LKA Abteilung B - Finanzen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/239">LKA Abteilung C - Ökumente und Kirchliches Leben</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/240">LKA Abteilung D - Gesellschaftsbezogene Dienste</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/241">LKA Abteilung E - Gemeinden und Kirchensteuer</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/node/242">LKA Abteilung F - Personal</a></li>
+				</ul>
+			</div>
+
+			<div id="wissen_div"><span class="footer_div_title">ELKB Wissen</span>
+				<ul id="wissen_list">
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/faq-page">Alle FAQs</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/anleitungen">Kurzanleitungen</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/book">Alle Handbücher</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/filter/tips">Tipps zur Erstellung von Inhalten</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/rechtssammlung-online">Beck-Online (Rechtssammlung)</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/forum">Forum</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/datenschutz">Datenschutz</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/it-sicherheit">IT-Sicherheit</a></li>
+					<li class="footer_list_item"><a href="https://www2.elkb.de/intranet/sicherheitsmeldungen">Sicherheitsmeldungen</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

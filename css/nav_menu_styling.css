@@ -1,0 +1,205 @@
+.nav-menu{
+	/*margin-left: 16.9%;*/
+	margin-top: 40px;
+	font-family: 'Istok Web', sans-serif;
+	/*background: #e6deff;*/
+	background: white;
+	color: #507;
+	border-radius: 3px;
+	/*width: 69.15%;*/
+	/*box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
+	/*box-shadow: 0px 1px 4px -2px #333;*/
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	font-size: 15.5px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item{
+	/*display: inline-block;*/
+	text-decoration: none;
+	/*padding: 15px 12.3px;*/
+	/*padding: 15px 21px;*/
+	color: #507;
+	font-size: 0.9rem;
+	position: relative;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#nav-aktionen{
+	padding-right: 16px;
+}
+
+.nav-item:hover{
+	background: #e6deff;
+	color: #7c52ae;
+	cursor: pointer;
+}
+
+.nav-submenu {
+	box-shadow: 0px 1px 4px -2px #333;
+	border: 1px solid lightgrey;
+	box-sizing: border-box;
+	display: block;
+	z-index: 100;
+	background: #fff;
+	position: absolute;
+	display: none;
+}
+
+.nav-submenu-list {
+	font-family: 'Istok Web', sans-serif;
+	padding-left: 0px;
+	text-align: left;
+}
+.nav-submenu-list li{
+	list-style: none;
+	line-height: 2;
+	padding-left: 10px;
+}
+
+.nav-submenu-list li:hover{
+	background: #ececec;
+}
+
+.nav-submenu-link {
+	text-decoration: none;
+	color: #7c52ae;
+	padding-left: 10px;
+}
+
+#nav-startseite {
+	color: #507;
+}
+
+#nav-submenu-anwendungen, #nav-submenu-verwaltung{
+	width: 250px;
+}
+
+#nav-submenu-lka{
+	width: 380px;
+}
+
+#nav-submenu-wissen, #nav-submenu-aktionen {
+	width: 270px;
+}
+
+#nav-submenu-veroeffentlichung{
+	width: 220px;
+}
+
+#nav-submenu-anwendungen, #nav-submenu-verwaltung, #nav-submenu-lka, #nav-submenu-veroeffentlichung, #nav-submenu-wissen{
+	display: none;
+	left: 0.5%;
+	top: 100%;
+}
+
+#nav-submenu-aktionen{
+	display: none;
+	top: 100%;
+	right: 0%;
+}
+
+#nav-anwendungen:hover #nav-submenu-anwendungen, #nav-verwaltung:hover #nav-submenu-verwaltung,
+#nav-lka:hover #nav-submenu-lka, #nav-veroeffentlichung:hover #nav-submenu-veroeffentlichung, #nav-wissen:hover #nav-submenu-wissen, #nav-aktionen:hover #nav-submenu-aktionen {
+	display: block;
+}
+
+#nav-anwendungen:hover #nav-submenu-anwendungen-big{
+	display: flex;
+}
+
+.nav-submenu-anw-big-column{
+	width: 100%;
+}
+
+#nav-submenu-anwendungen-big{
+	top: 100%;
+	width: 69.5vw;
+	display: none;
+}
+
+#nav-submenu-anwendungen-big h4{
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 22px;
+	color: #ff6600;
+	opacity: 0.8;
+}
+
+.nav-submenu-anw-div{
+	display: inline;
+}
+
+.nav-submenu-anw-big-column{
+	margin-top: 10px;
+}
+
+.nav-submenu-anw-div ul{
+	margin-top: -15px;
+}
+
+.nav-submenu-anw-big-ul{
+	padding-left: 0px;
+}
+.nav-submenu-anw-big-ul li {
+	list-style: none;
+}
+
+.info-star{
+	margin-left: 10px;
+}
+
+.info-star .fa-question-circle, .info-star .fa-star {
+	font-size: 14px;
+	display: none;
+}
+
+.nav-submenu-list-link:hover .info-star .fa-question-circle, .nav-submenu-list-link:hover .info-star .fa-star{
+	display: inline-block;
+}
+
+.info-star .fa-star:hover, .info-star .fa-question-circle:hover{
+	color: #ff6600;
+}
+
+.info-star .star-favorite{
+	display: inline-block;
+	color: #ff6600;
+}
+
+/*CSS für das Fragezeichen in den Nav-Submenu-Items*/
+.nav-submenu-list-link{
+	position: relative;
+}
+.nav-submenu-li-item-question{
+	background: white;
+	border: 1px solid lightgrey;
+	box-shadow: 0px 1px 4px -2px #333;
+	color: #7c52ae;
+	display: none;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: absolute;
+	width: 115%;
+	z-index: 200;
+}
+
+.nav-submenu-li-question-headline{
+	font-weight: 600;
+}
+
+.nav-submenu-li-question-text a{
+	color: #7c52ae;
+	text-decoration: none;
+}
+.nav-submenu-li-question-text a:hover{
+	cursor: pointer;
+	color: #ff6600;
+}

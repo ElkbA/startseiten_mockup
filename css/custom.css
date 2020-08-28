@@ -1,0 +1,72 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("externe_interne_tools_styling.css");
+@import url("search_styling.css");
+@import url("nav_menu_styling.css");
+@import url("home_headlines_styling.css");
+@import url("home_tabs_styling.css");
+@import url("footer_styling.css");
+
+body {
+	width: 70%;
+	margin: auto;
+}
+.header{
+	margin-top: 25px;
+	/*margin-left: 25px;
+	position: relative;*/
+	padding-bottom: 15px;
+	/*box-shadow: 0 0px 6px 0 rgba(32,33,36,0.28);*/
+	/*box-shadow: 0px 1px 4px -2px #507;*/
+}
+
+.first_line{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.home-header-logo, .home-header-tools-extern, .home-header-tools-intern {
+	/*display: inline-block;*/
+}
+
+.home-header-logo {
+	/*position: absolute;
+	left: 17%;*/
+}
+
+#logo-startseite{
+	/*height: 55px;
+	float: left;*/
+	height: 45px;
+}
+
+/*-----------------Externe Tools styling-----------------------*/
+/*.home-header-tools-extern {
+	/*position: absolute;
+	/*left: 25%;
+	left: 27%;
+}*/
+
+/*(Styling der einzelnen Links in externe_tools_styling.css)*/
+
+/*-----------------Interne Tools styling---------------------*/
+.home-header-tools-intern {
+	/*left: 83vw;*/
+	/*float: right;
+	position: relative;*/
+	/*position: absolute;
+	left: 72.5%;*/
+	position: relative;
+}
+
+/*(Styling der einzelnen Buttons in extern_interne_tools_styling.css)*/
+
+/*------------------Suche Styling in search_styling.css--------------------*/
+
+/*------------------Nav-Menu Styling in nav_menu_styling.css---------------*/
+
+/*------------------ELKB-Schlagzeilen-Styling in home_headlines_styling.css-----------*/
+
+/*------------------Home-Tabs-Styling in home_tabs_styling.css------------------------*/
+
+/*------------------Footer-Styling in footer_styling.css*/
