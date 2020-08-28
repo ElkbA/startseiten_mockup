@@ -371,7 +371,7 @@
 	position: absolute;
 	top: -21px;
 	/*left: 215px;*/
-	left: 75%;
+	left: 165px;
 }
 
 .home-header-bookmarks.bookmarks-vis:after{
@@ -384,7 +384,7 @@
 	border-bottom: 9.7px solid #fff;
 	position: absolute;
 	top: -18.5px;
-	left: 215px;
+	left: 214.5px;
 	/*left: 76.3%;*/
 }
 
@@ -398,7 +398,7 @@
 	border-bottom: 9.7px solid #fff;
 	position: absolute;
 	top: -18.5px;
-	left: 75.3%;
+	left: 165.5px;
 }
 
 .home-header-bookmarks.bookmarks-unvis, .home-header-help.help-unvis {
@@ -485,12 +485,12 @@
 	height: 0px;
 	border-top: 9.7px solid transparent;
 	border-right: 9.7px solid transparent;
-	border-bottom: 9.7px solid red;
+	border-bottom: 9.7px solid #fff;
 	border-left: 9.7px solid transparent;
 	position: absolute;
-	left: 289.5px;
+	left: 290.5px;
 	/*left: 77.8%;*/
-	top: -18.5px;
+	top: -18px;
 }
 
 .home-header-appsLauncher-item {
