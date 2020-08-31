@@ -4,6 +4,7 @@
 	<title>elkbIntranet - Startseite - Prototyp</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/no_slider.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Istok+Web|Rubik|Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
@@ -433,105 +434,77 @@
 
 	<div class="home-headlines">
 		<span onclick="headlines_vis();" class="elkb-schlagzeilen-ueberschrift">ELKB-Schlagzeilen <i class="fas fa-caret-down" id="headlines-caret"></i> </span>
-		<!--
-		<div class="angles-headlines">
-			<div class="angles">
-				<i class="fas fa-chevron-left both-angles" id="angle-left" onclick="scroll_headlines_left();"></i>
+		<div class="headlines-no-slider-all">
+			<div class="headlines-no-slider-first-row">
+				<div class="headline-card-no-slider">
+					<a href="https://www2.elkb.de/intranet/node/23633" title="Osterbotschaft vom Landesbischof Bedford-Strohm" target="_blank">
+						<div class="card-no-slider">
+							<div class="card-image-no-slider">
+								<img src="images/bedford_strohm.jpeg">
+							</div>
+							<div class="card-text-no-slider">
+								<p>
+									Osterbotschaft von Heinrich Bedford-Strohm
+									<br>
+									<span class="card-text-datum-no-slider">10.Apr</span>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="headline-card-no-slider">
+					<a href="https://www2.elkb.de/intranet/node/25499" title="Leben im Sterben" target="_blank">
+						<div class="card-no-slider">
+							<div class="card-image-no-slider">
+								<img src="images/Landkirche.JPG">
+							</div>
+							<div class="card-text-no-slider">
+								<p>
+									Ökumenische Woche: "Leben im Sterben"
+									<br>
+									<span class="card-text-datum-no-slider">23.Feb</span>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="headline-card-no-slider">
+					<a href="https://www.evangelisch.de/inhalte/165842/19-02-2020/das-evangelische-content-netzwerk-yeet-ist-gestartet" title="Evangelisches Netzwerk yeet ist gestartet" target="_blank">
+						<div class="card-no-slider">
+							<div class="card-image-no-slider">
+								<img src="images/yeet_test.jpg">
+							</div>
+							<div class="card-text-no-slider">
+								<p>
+									Evangelisches Netzwerk yeet gestartet
+									<br>
+									<span class="card-text-datum-no-slider">18.Feb</span>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="headline-card-no-slider">
+					<a href="http://evangelische-journalistenschule-retten.de/" title="Evangelische Journalistenschule retten" target="_blank">
+						<div class="card-no-slider">
+							<div class="card-image-no-slider">
+								<img src="images/ejs.jpg">
+							</div>
+							<div class="card-text-no-slider">
+								<p>
+									Evangelische Journalistenschule retten
+									<br>
+									<span class="card-text-datum-no-slider">15.Jan</span>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
-			<div class="headlines-self">
-				<ul class="home-headlines-list" id="home-headlines-list-id">			
-					<li class="headline-card card-visible">
-						<a href="https://www2.elkb.de/intranet/node/23633" title="Osterbotschaft vom Landesbischof Bedford-Strohm" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<img src="images/bedford_strohm.jpeg">
-								</div>
-								<div class="card-text">
-									<p>
-										Osterbotschaft von Heinrich Bedford-Strohm
-										<br>
-										<span class="card-text-datum">10.Apr</span>
-									</p>
-								</div>
-							</div>
-						</a>
-					</li>
-
-					<li class="headline-card card-visible">
-						<a href="https://www2.elkb.de/intranet/node/25499" title="Leben im Sterben" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<img src="images/Landkirche.JPG">
-								</div>
-								<div class="card-text">
-									<p>
-										Ökumenische Woche: "Leben im Sterben"
-										<br>
-										<span class="card-text-datum">23.Feb</span>
-									</p>
-								</div>
-							</div>
-						</a>
-					</li>
-
-					<li class="headline-card card-visible">
-						<a href="https://www.evangelisch.de/inhalte/165842/19-02-2020/das-evangelische-content-netzwerk-yeet-ist-gestartet" title="Evangelisches Netzwerk yeet ist gestartet" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<img src="images/yeet_test.jpg">
-								</div>
-								<div class="card-text">
-									<p>
-										Evangelisches Netzwerk yeet gestartet
-										<br>
-										<span class="card-text-datum">18.Feb</span>
-									</p>
-								</div>
-							</div>
-						</a>
-					</li>
-
-					<li class="headline-card card-visible">
-						<a href="http://evangelische-journalistenschule-retten.de/" title="Evangelische Journalistenschule retten" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<img src="images/ejs.jpg">
-								</div>
-								<div class="card-text">
-									<p>
-										Evangelische Journalistenschule retten
-										<br>
-										<span class="card-text-datum">15.Jan</span>
-									</p>
-								</div>
-							</div>
-						</a>
-					</li>
-
-					<li class="headline-card card-invisible">
-						<a href="https://www2.elkb.de/intranet/node/25484" title="Verfassungsmedaille in Gold für Breit-Keßler" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<img src="images/breit_kessler.jpg">
-								</div>
-								<div class="card-text">
-									<p>
-										Verfassungsmedaille in Gold für Breit-Keßler
-										<br>
-										<span class="card-text-datum">12.Dez</span>
-									</p>
-								</div>
-							</div>
-						</a>
-					</li>
-
-				</ul>
-				
-			</div>
-			<div class="angles">
-				<i class="fas fa-chevron-right both-angles" id="angle-right" onclick="scroll_headlines_right();"></i>
-			</div>
-		</div> -->
+		</div>
 	</div>
 
 	<!-- Hometabs-->
