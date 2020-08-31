@@ -2,11 +2,19 @@
 	width: 100%;
 }
 
-.headlines-no-slider-first-row {
+.headlines-no-slider-row {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 20px;
+}
+
+.second-row-link {
+	display: none;
+}
+
+.second-row-link.visible{
+	display: block;
 }
 
 .headline-card-no-slider{
@@ -55,4 +63,27 @@
 .card-text-datum-no-slider{
 	color: lightgrey;
 	padding-left: 10.5vw;
+}
+
+#headline-show-more p{
+	text-align: center;
+	font-size: 0.8rem;
+	margin-top: 20px;
+}
+
+#headline-show-more p a{
+	color:#7c52ae;
+	opacity: 0.7;
+	text-decoration: none;
+	padding: 7px;
+	border-radius: 3px;
+	border: 2px solid white;
+	border-bottom: 2px solid #7c52ae;
+	transition: opacity 0.5s;
+	transition: border 0.5s;
+}
+
+#headline-show-more p a:hover{
+	opacity: 1;
+	border: 2px solid #7c52ae;
 }
