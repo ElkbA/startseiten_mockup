@@ -67,14 +67,23 @@
 
 .card-text-no-slider{
 	height: 70px;
+	box-sizing: border-box;
 }
-.card-text-no-slider p {
-	margin-bottom: -2px;
+
+.card-text-title-no-slider {
+	display: block;
+	height: 28px;
+
 }
 
 .card-text-datum-no-slider{
 	color: lightgrey;
-	padding-left: 10.5vw;
+	display: block;
+	height: 28px;
+	text-align: right;
+	margin: 0;
+	padding-right: 8px;
+	padding-bottom: 8px;
 }
 
 #headline-show-more p{
