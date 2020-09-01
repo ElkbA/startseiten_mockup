@@ -88,15 +88,32 @@
 	margin-top: -5px;
 	overflow: hidden;
 	text-align: left;
+	height: 70px;
+	box-sizing: border-box;
 }
 
-.card-text p {
+/*.card-text p {
 	margin-bottom: -2px;
+}*/
+
+.card-text-title {
+	display: block;
+	height: 28px;
 }
+
+/*.card-text-datum{
+	color: lightgrey;
+	padding-left: 10.5vw;
+}*/
 
 .card-text-datum{
 	color: lightgrey;
-	padding-left: 10.5vw;
+	display: block;
+	height: 28px;
+	text-align: right;
+	margin: 0;
+	padding-right: 8px;
+	padding-bottom: 8px;
 }
 
 /*.angles{

@@ -1,17 +1,44 @@
+.elkb-schlagzeilen-ueberschrift-no-slider{
+	font-family: 'Istok Web', sans-serif;
+	font-size: 0.9rem;
+	color: grey;
+	font-weight: bold;
+	left: 0;
+	position: relative;
+}
+
+.elkb-schlagzeilen-ueberschrift-no-slider.invisible {
+	margin-bottom: 50px;
+}
+
+.elkb-schlagzeilen-ueberschrift-no-slider:hover{
+	cursor: pointer;
+	color: #7c52ae;
+}
+
+
+
 #headlines-plus-minus {
 	border: 1.5px solid white;
 	border-radius: 1.5px;
 	box-sizing: border-box;
 	padding: 1px;
+	color: grey;
+	font-size: 0.8rem;
 }
 
 #headlines-plus-minus:hover{
 	color: #7c52ae;
-	border: 1px solid #7c52ae;
+	/*border: 1px solid #7c52ae;*/
+	cursor: pointer;
 }
 
 .headlines-no-slider-all{
 	width: 100%;
+}
+
+.headlines-no-slider-all.invisible{
+	display: none;
 }
 
 .headlines-no-slider-row {
@@ -63,17 +90,18 @@
 	margin-top: -5px;
 	overflow: hidden;
 	text-align: left;
-}
-
-.card-text-no-slider{
 	height: 70px;
 	box-sizing: border-box;
 }
 
+/*.card-text-no-slider{
+	height: 70px;
+	box-sizing: border-box;
+}*/
+
 .card-text-title-no-slider {
 	display: block;
 	height: 28px;
-
 }
 
 .card-text-datum-no-slider{
