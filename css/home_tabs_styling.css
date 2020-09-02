@@ -90,11 +90,22 @@
 	width: 100%;
 }
 
-
 #elkb-karte-image{
 	padding-left: 100px;
 	padding-top: 7px;
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 65%;
+	transition: all 0.5s linear;
+}
+
+#elkb-karte-image:hover{
+	transform: scale(1.5);
+	z-index: 3000;
+	position: relative;
+	top: 60px;
+	left: -50px;
 }
 
 #kommentare-newsletter {
