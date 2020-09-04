@@ -21,6 +21,26 @@
 	margin-bottom: 50px;
 }
 
+.alle_schlagzeilen_anzeigen{
+	font-size: 0.75rem;
+	font-family: 'Istok Web', sans-serif;
+	color: #7c52ae;
+	text-decoration: none;
+	margin-left: 15px;
+	padding: 3px 5px 1px 5px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	border-bottom: 1px solid #7c52ae;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+.alle_schlagzeilen_anzeigen:hover{
+	color: #ff6600;
+	border-bottom: 1px solid #ff6600;
+	opacity: 1;
+}
+
 #headlines-caret{
 	transition: all 0.25s linear;
 }
