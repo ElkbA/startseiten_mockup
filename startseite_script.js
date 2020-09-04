@@ -165,6 +165,7 @@ $(function(){
 		if(JSON.parse(localStorage.homeTabs).length == $(".home-my-tabs-list").children().length ) {
 		} else {
 			console.log("es fehlt was");
+			localStorage.removeItem("homeTabs");
 		}
 		var tab_order_lS = localStorage.getItem("homeTabs");
 		var tab_order = new Array();
