@@ -1,5 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 @import url("externe_interne_tools_styling.css");
+@import url("mini_header_styling.css");
 @import url("search_styling.css");
 @import url("nav_menu_styling.css");
 @import url("home_headlines_styling.css");
@@ -10,8 +11,10 @@ body {
 	width: 70%;
 	margin: auto;
 }
+
+/*------------------Mini-Header-Styling in mini_header_styling.css--------------------*/
 .header{
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 	/*margin-left: 25px;
 	position: relative;*/
 	padding-bottom: 15px;
@@ -20,9 +23,17 @@ body {
 }
 
 .first_line{
+	background: #fff;
+	box-sizing: border-box;
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
+	padding: 25px 10px 5px 10px;
+	position: fixed;
+	top: 0;
+	width: 70%;
+	margin: auto;
+	z-index: 1000;
 }
 
 .home-header-logo, .home-header-tools-extern, .home-header-tools-intern {
