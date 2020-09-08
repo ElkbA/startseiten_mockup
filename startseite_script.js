@@ -194,9 +194,10 @@ $(function(){
 	}
 });
 
-//Enables the rearranging of the tabs and saves the current order to localStorage
+
 $(document).ready(function(){	
 
+	//Enables the rearranging of the tabs and saves the current order to localStorage
 	var tabs = $(".home-my-tabs").tabs();
 	tabs.find(".ui-tabs-nav").sortable({
 		axis: "x",
@@ -210,7 +211,16 @@ $(document).ready(function(){
 			}
 			localStorage.setItem("homeTabs", JSON.stringify(tab_order));
 		}
-	});	
+	});
+
+	window.onscroll = function(){
+		if (window.pageYOffset > 50) {
+			//$(".first_line").css("box-shadow", "0px 15px 10px -15px #7c52ae");
+			$(".first_line").css("box-shadow", "0px 10px 10px -9px #7c52ae");
+		} else {
+			$(".first_line").css("box-shadow", "0px 0px 0px 0px #fff");
+		}
+	}	
 });
 
 //Toggle between visible and invisible Kommentare and Newsletter section, toggle between invisible and visible favorite-stars
