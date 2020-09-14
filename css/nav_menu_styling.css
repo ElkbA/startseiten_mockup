@@ -9,8 +9,8 @@
 	/*width: 69.15%;*/
 	/*box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
 	/*box-shadow: 0px 1px 4px -2px #333;*/
-	/*box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
-	border: 1px solid #dfe1e5;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	/*border: 1px solid #dfe1e5;*/
 	font-size: 15.5px;
 	display: flex;
 	align-items: center;

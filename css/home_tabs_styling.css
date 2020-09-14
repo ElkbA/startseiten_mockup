@@ -1,8 +1,8 @@
 /*Home Tabs*/
 
 .home-tabs {
-	/*box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
-	border: 1px solid #dfe1e5;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	/*border: 1px solid #dfe1e5;*/
 	border-radius: 4px;
 	position: relative;
 	/*left: 17.3vw;*/
