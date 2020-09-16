@@ -7,8 +7,19 @@
 @import url("home_tabs_styling.css");
 @import url("footer_styling.css");
 
+html{
+	/*background: #f2f3f4;*/
+	background: #fff;
+}
+
 body {
-	width: 70%;
+	background: #fff;
+	width: 80%;
+	margin: auto;
+}
+
+.everything {
+	width: 90%;
 	margin: auto;
 }
 
@@ -29,9 +40,10 @@ body {
 	align-content: center;
 	justify-content: space-between;
 	padding: 25px 10px 5px 10px;
+	/*padding: 25px 0px 5px 0px;*/
 	position: fixed;
 	top: 0;
-	width: 70%;
+	width: 72%;
 	margin: auto;
 	z-index: 1000;
 }
@@ -48,7 +60,7 @@ body {
 #logo-startseite{
 	/*height: 55px;
 	float: left;*/
-	height: 45px;
+	height: 38px;
 }
 
 /*-----------------Externe Tools styling-----------------------*/
