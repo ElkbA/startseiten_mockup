@@ -63,7 +63,7 @@
 }
 
 #ticker-karte {
-	height: 400px;
+	height: 430px;
 }
 #neue-beitraege-kommentare-newsletter{
 	overflow: scroll;
@@ -72,10 +72,15 @@
 }
 
 #ticker-karte, #kommentare-newsletter{
-	column-count: 2;
+	/*column-count: 2;*/
+	display: flex;
 }
 
-#neue-beitraege, #kommentare{
+#neue-beitraege {
+	flex-basis: 65%;
+}
+
+#neue-beitraege-title, #kommentare{
 	margin-left: 20px;
 }
 
@@ -84,7 +89,7 @@
 }
 
 #neue-beitraege-image{
-	width: 110%;
+	width: 100%;
 }
 
 #neue-beitraege-var2-image {
@@ -97,16 +102,72 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 65%;
+	width: 70%;
 	transition: all 0.5s linear;
 }
-
+/*
 #elkb-karte-image:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 	z-index: 3000;
 	position: relative;
 	top: 60px;
 	left: -50px;
+}*/
+
+.intranet-tab-neu-beitrag-list li {
+	list-style: none;
+}
+
+.neu-beitrag-p {
+	font-family: 'Istok Web', sans-serif;
+	padding-bottom: 5px;
+	/*border-bottom: 1px solid #e6deff;*/
+}
+
+.neu-beitrag-datum {
+	color: lightgrey;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 0.8rem;
+}
+
+.neu-beitrag-datum a {
+	color: lightgrey;
+	text-decoration: none;
+}
+
+.neu-beitrag-datum a:hover{
+	color: #ff6600;
+}
+
+.neu-beitrag-link {
+	color: #7c52ae;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 0.95rem;
+	text-decoration: none;
+}
+
+.neu-beitrag-link:hover{
+	color: #ff6600;
+}
+
+.neue-beitraege-mehr {
+	text-align: center;
+}
+
+.neue-beitraege-mehr a {
+	text-decoration: none;
+	color: #7c52ae;
+	font-size: 0.9rem;
+	font-family: 'Istok Web', sans-serif;
+	border-bottom: 1px solid rgba(124, 82, 174, 0.8);
+	opacity: 0.8;
+	transition: all 0.3s;
+}
+
+.neue-beitraege-mehr a:hover {
+	border-bottom: 1px solid #ff6600;
+	color: #ff6600;
+	opacity: 1;
 }
 
 #kommentare-newsletter {
@@ -167,12 +228,12 @@
 	padding-top: 55px;
 }
 
-#neu-im-intranet-mehr{
+.neu-im-intranet-mehr{
 	text-align: center;
 	font-size: 14px;
 }
 
-#neu-im-intranet-mehr a{
+.neu-im-intranet-mehr a{
 	color:#7c52ae;
 	opacity: 0.7;
 	text-decoration: none;
@@ -184,7 +245,7 @@
 	transition: border 0.5s;
 }
 
-#neu-im-intranet-mehr a:hover{
+.neu-im-intranet-mehr a:hover{
 	opacity: 1;
 	border: 2px solid #7c52ae;
 }
