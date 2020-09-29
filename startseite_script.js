@@ -231,6 +231,8 @@ $(function (){
 		$(".newsletter-arrow").toggleClass("kommentare-newsletter-arrow-visible");
 		$("#kommentare-image").toggle();
 		$("#newsletter-image").toggle();
+		$("#kommentare-liste").toggle();
+		$("#newsletter-liste").toggle();
 	});
 
 	$(".info-star .fa-star").click(function(){

@@ -76,6 +76,10 @@
 	display: flex;
 }
 
+#kommentare, #newsletter {
+	flex-basis: 50%;
+}
+
 #neue-beitraege {
 	flex-basis: 65%;
 }
@@ -176,7 +180,7 @@
 }
 
 #kommentare-image{
-	width: 110%;
+	width: 65%;
 }
 
 #kommentare-var2-image{
@@ -202,12 +206,21 @@
 	padding-top: 0.5px;
 }
 
+#newsletter-liste li{
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+}
+
 #newsletter-image{
 	width: 160%;
 }
 
 #newsletter-var2-image{
 	width: 100%;
+}
+
+.intranet-tab-neu-beitrag-list.invisible-kommentar, .intranet-tab-neu-beitrag-list.invisible-newsletter {
+	display: none;
 }
 
 #neu-im-intranet{
