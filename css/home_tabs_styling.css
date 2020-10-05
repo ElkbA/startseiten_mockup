@@ -156,6 +156,7 @@
 
 .neue-beitraege-mehr {
 	text-align: center;
+	margin-top: 0px;
 }
 
 .neue-beitraege-mehr a {
@@ -223,13 +224,86 @@
 	display: none;
 }
 
-#neu-im-intranet{
-	column-count: 2;
+#neu-im-intranet p, #neu-im-intranet h3 {
+	margin-left: 20px;
+} 
+
+#neu-im-intranet h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-#neu-im-intranet p {
+.neu-im-intranet-wrapper {
+	column-count: 2;
+	column-gap: 30px;
+	color: #7c52ae;
 	margin-left: 20px;
+	margin-right: 20px;
 }
+
+.intranet-news-item {
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	margin-bottom: 30px;
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+}
+
+.intranet-news-item:hover{
+	cursor: pointer;
+}
+
+.intranet-news-kategorie {
+	display: inline-block;
+	font-size: 13px;
+	color: #ff6600;
+	border-bottom: 1px solid #fff;
+	opacity: 0.8;
+	transition: all 0.5s;
+}
+
+.intranet-news-kategorie:hover{
+	border-bottom: 1px solid #ff6600;
+	opacity: 1;
+}
+
+.intranet-news-link {
+	text-decoration: none;
+	color: #7c52ae;
+}
+
+.intranet-news-title {
+	font-style: italic;
+}
+
+.intranet-news-title:hover{
+	opacity: 0.7;
+}
+
+.intranet-news-bild-text {
+	display: flex;
+}
+
+.text-only {
+	flex-basis: 50%;
+	text-align: justify;
+}
+
+.intranet-news-image-only {
+	flex-basis: 50%;
+	margin-right: 10px;
+}
+
+.intranet-news-image-only img {
+	width: 100%;
+}
+
+
+/*#neu-im-intranet{
+	column-count: 2;
+	column-span: none;
+} 
 
 #neu-im-intranet-1-image {
 	width: 90%;
@@ -261,7 +335,9 @@
 .neu-im-intranet-mehr a:hover{
 	opacity: 1;
 	border: 2px solid #7c52ae;
-}
+} gültig dort, wo Neues vom Intranet-Team per Screenshot eingebunden ist*/ 
+
+
 /*#intranet{
 	display: flex;
 }
